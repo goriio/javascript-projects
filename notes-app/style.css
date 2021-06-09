@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(12, 11, 15);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  margin: 4rem 2rem;
+}
+
+.add {
+  background-color: rgb(20, 20, 27);
+  color: rgb(228, 218, 241);
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.add:hover {
+  color: rgb(53, 53, 177);
+}
+
+.note {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  background-color: rgb(32, 30, 39);
+  height: 250px;
+  width: 250px;
+}
+
+.note .tools {
+  background-color: rgb(20, 20, 27);
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  color: rgb(228, 218, 241);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.note .tools button:hover {
+  color: rgb(53, 53, 177);
+}
+
+.note .main {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  color: rgb(228, 218, 241);
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  color: rgb(228, 218, 241);
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  border: 2px solid rgb(53, 53, 177);
+  background-color: rgb(32, 30, 39);
+  resize: none;
+}
+
+.note .hidden {
+  display: none;
+}

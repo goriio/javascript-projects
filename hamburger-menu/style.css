@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242850;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  padding: 0 4rem;
+  background-color: white;
+  position: relative;
+}
+
+span.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: rgb(108, 103, 110);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: black;
+}
+
+nav .menu {
+  background-color: transparent;
+  color: black;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  nav .menu {
+    display: block;
+  }
+
+  nav {
+    padding: 0 2rem;
+  }
+
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    top: 80px;
+    left: 0;
+    padding: 2rem 0;
+    display: none;
+  }
+
+  nav ul.show {
+    display: block;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 1.5rem auto;
+  }
+
+  nav ul li a {
+    color: rgb(150, 143, 153);
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: white;
+  }
+}
